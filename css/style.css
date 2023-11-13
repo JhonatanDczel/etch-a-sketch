@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#marco {
+  background-color: #555;
+  padding: 16px;
+  border-radius: 3%;
+}
+
+.sketch {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60vw;
+  height: 60vw;
+  max-width: 700px;
+  max-height: 700px;
+}
+
+.square {
+  background-color: green;
+  height: 6.25%;
+  width: 6.25%;
+}
