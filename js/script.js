@@ -1,4 +1,6 @@
 const sketch = document.querySelector('.sketch');
+
+sketch.addEventListener('mouseover', (e) => { changeColor(e.target); });
 createSketch();
 
 function createSketch() {
@@ -7,4 +9,8 @@ function createSketch() {
     square.classList.add('square');
     sketch.appendChild(square);
   }
+}
+
+function changeColor(div) {
+  div.style.backgroundColor = 'black';
 }
