@@ -26,9 +26,35 @@ body {
   text-align: center;
   font-size: 24px;
   padding: 24px 0;
-  background-color: #84b6f4;
+  background-color: #78f;
   color: #efefef;
   width: 100vw;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  width: 100vw;
+  max-width: 1000px;
+
+}
+
+.scale {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.control {
+  color: #777;
+  font-weight: 800;
+  background-color: white;
+  padding: 10px 16px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 #marco {
@@ -53,7 +79,7 @@ body {
   height: 6.25%;
   width: 6.25%;
   border: 0.5px solid rgba(200, 200, 250, 0.2);
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .footer {
