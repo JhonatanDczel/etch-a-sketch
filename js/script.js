@@ -1,5 +1,19 @@
+let drawing = (e) => { changeColor(e.target); };
 const sketch = document.querySelector('.sketch');
 const scale = document.querySelector('#scale');
+
+document.addEventListener('mousedown', (e) => {
+  if (e.target.classList.value == 'square' || e.target.classList.value == 'sketch' || e.target.id == 'marco') {
+    e.preventDefault();
+    console.log('ji');
+  }
+  sketch.addEventListener('mouseover', drawing);
+});
+
+document.addEventListener('mouseup', () => {
+  sketch.removeEventListener('mouseover', drawing);
+});
+createSketch(16);
 
 scale.addEventListener('input', (e) => {
   const target = e.target;
@@ -7,10 +21,6 @@ scale.addEventListener('input', (e) => {
   createSketch(num);
 });
 
-sketch.addEventListener('mouseover', (e) => {
-  changeColor(e.target);
-});
-createSketch(16);
 
 function createSketch(num) {
   const oldSquares = document.querySelectorAll('.square');
