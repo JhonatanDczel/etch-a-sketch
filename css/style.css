@@ -53,6 +53,7 @@ body {
   height: 6.25%;
   width: 6.25%;
   border: 0.5px solid rgba(200, 200, 250, 0.2);
+  border-radius: 5px;
 }
 
 .footer {

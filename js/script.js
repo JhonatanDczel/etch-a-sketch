@@ -7,7 +7,9 @@ scale.addEventListener('input', (e) => {
   createSketch(num);
 });
 
-sketch.addEventListener('mouseover', (e) => { changeColor(e.target); });
+sketch.addEventListener('mouseover', (e) => {
+  changeColor(e.target);
+});
 createSketch(16);
 
 function createSketch(num) {
@@ -25,5 +27,6 @@ function createSketch(num) {
 }
 
 function changeColor(div) {
+  if (div.id == 'sketch') return;
   div.style.backgroundColor = 'black';
 }
