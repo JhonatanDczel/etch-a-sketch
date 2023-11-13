@@ -10,11 +10,17 @@ body {
   width: 100vw;
   height: 100vh;
   gap: 32px;
+  flex-wrap: wrap;
+  background-image: url(../img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center -40px;
+  background-size: 100vw auto;
 }
 
 #marco {
-  background-color: #555;
+  background-color: transparent;
   padding: 16px;
+  border: 3px solid #e1f3fe;
   border-radius: 3%;
 }
 
@@ -29,7 +35,14 @@ body {
 }
 
 .square {
-  background-color: green;
+  background-color: transparent;
   height: 6.25%;
   width: 6.25%;
+}
+
+@media (max-width: 1500px) {
+  body {
+    background-size: auto 100vh;
+    background-position: center top;
+  }
 }
