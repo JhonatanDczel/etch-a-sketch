@@ -42,19 +42,43 @@ body {
 
 }
 
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .scale {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
+#rainbow {
+  background-color: transparent;
+  border: none;
+  color: #777;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.control:hover {
+  background-color: #eee;
+}
+
+.control.pressed {
+  background-color: #ccc;
+}
+
 .control {
   color: #777;
+  font-size: 16px;
   font-weight: 800;
   background-color: white;
   padding: 10px 16px;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 #marco {
