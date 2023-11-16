@@ -4,7 +4,7 @@
 
 ## 🚀 Descripción
 
-Etch a Sketch es un proyecto pensado para poner en practica el conocimiento adquirido en las lecciones de manipulacion de DOM y eventos en JavaScript, es un lugar donde puedes dejar volar tu imaginacion y tu creatividad!.
+Etch a Sketch es un proyecto pensado para poner en practica el conocimiento adquirido en las lecciones de manipulacion de DOM y eventos en JavaScript, es un lugar donde puedes dejar volar tu imaginacion y tu creatividad!. Es parte de mi aprendizaje en desarrollo web y JavaScript en el curso Foundations de The Odin Project. ([🔗 Ver mas proyectos](https://github.com/JhonatanDczel/the-odin-project-foundations))
 
 ## 🌐 Demo
 
